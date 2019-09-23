@@ -35,7 +35,7 @@ vis_1 <- ggplot(d_1, aes(iq, income)) +
        title = "Small Effect",
        subtitle = paste0("r = ", td::my_round(cor_1, "std"), ", b = ", round(reg_1$coefficients["iq"], 0), " $US"))
 print(vis_1)
-ggsave("figure_01.png")
+ggsave("figure_01.png", dpi = 220, width = 7, height = 5)
 ```
 
 # Large Effect
@@ -64,7 +64,7 @@ vis_2 <- ggplot(d_2, aes(iq, income)) +
        title = "Large Effect",
        subtitle = paste0("r = ", td::my_round(cor_2, "std"), ", b = ", round(reg_2$coefficients["iq"], 0), " $US"))
 print(vis_2)
-ggsave("figure_02.png")
+ggsave("figure_02.png", dpi = 220, width = 7, height = 5)
 ```
 
 # Create GIF
